@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Promotion Filter",
+  "version": "1.0",
+  "description": "Filter promotion emails in Gmail based on keywords",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
